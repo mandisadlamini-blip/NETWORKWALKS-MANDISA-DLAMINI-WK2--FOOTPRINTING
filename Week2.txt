@@ -1,0 +1,110 @@
+Task 1
+ 
+ whois networkwalks.com                                              
+   Domain Name: NETWORKWALKS.COM
+   Registry Domain ID: 2452319255_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.godaddy.com
+   Registrar URL: http://www.godaddy.com
+   Updated Date: 2025-11-12T10:08:43Z
+   Creation Date: 2019-11-06T22:51:46Z
+   Registry Expiry Date: 2027-11-06T22:51:46Z
+   Registrar: GoDaddy.com, LLC
+   Registrar IANA ID: 146
+   Registrar Abuse Contact Email: abuse@godaddy.com
+   Registrar Abuse Contact Phone: 480-624-2505
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: NS6135.HOSTGATOR.COM
+   Name Server: NS6136.HOSTGATOR.COM
+   DNSSEC: unsigned
+
+Task 2
+whatweb networkwalks.com
+http://networkwalks.com [301 Moved Permanently] Apache, Cookies[__wpdm_client], Country[UNITED STATES][US], HTTPServer[Apache], HttpOnly[__wpdm_client], IP[192.232.216.135], RedirectLocation[https://networkwalks.com/], UncommonHeaders[permissions-policy,x-redirect-by,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache]
+https://networkwalks.com [200 OK] Apache, Bootstrap[7.1.1], Cookies[__wpdm_client], Country[UNITED STATES][US], Email[info@networkwalks.com], Frame, Google-Tag-Manager, HTML5, HTTPServer[Apache], HttpOnly[__wpdm_client], IP[192.232.216.135], JQuery[3.7.1], MetaGenerator[WordPress 7.1.1,WordPress Download Manager 3.3.58], Open-Graph-Protocol[website], Script[4684NR-IPIB&amp;pidnVar2=50511&amp;prtVar2=7&amp;scvVar2=12,application/json,application/ld+json,module,speculationrules,text/javascript], Title[Networkwalks Academy], UncommonHeaders[permissions-policy,link,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache], WordPress[7.1.1]
+https://networkwalks.com/ [200 OK] Apache, Bootstrap[7.1.1], Country[UNITED STATES][US], Email[info@networkwalks.com], Frame, Google-Tag-Manager, HTML5, HTTPServer[Apache], IP[192.232.216.135], JQuery[3.7.1], MetaGenerator[WordPress 7.1.1,WordPress Download Manager 3.3.58], Open-Graph-Protocol[website], Script[4684NR-IPIB&amp;pidnVar2=50511&amp;prtVar2=7&amp;scvVar2=12,application/json,application/ld+json,module,speculationrules,text/javascript], Title[Networkwalks Academy], UncommonHeaders[permissions-policy,link,upgrade,referrer-policy,x-endurance-cache-level,x-nginx-cache], WordPress[7.1.1]
+
+Task 3
+ 
+ nslookup networkwalks.com               
+Server:         8.8.8.8
+Address:        8.8.8.8#53
+
+Non-authoritative answer:
+Name:   networkwalks.com
+Address: 192.232.216.135
+
+Task 4
+
+curl -I http://networkwalks.com
+HTTP/1.1 301 Moved Permanently
+Date: Fri, 18 Sep 2026 16:17:48 GMT
+Server: Apache
+Permissions-Policy: private-state-token-redemption=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com"), private-state-token-issuance=(self "https://www.google.com" "https://www.gstatic.com" "https://recaptcha.net" "https://challenges.cloudflare.com" "https://hcaptcha.com")
+Expires: Fri, 18 Sep 2026 17:17:48 GMT
+Cache-Control: max-age=3600
+X-Redirect-By: WordPress - Really Simple Security
+Set-Cookie: __wpdm_client=4ddd1df8fb97faa317246a53df77556e; path=/; domain=networkwalks.com; HttpOnly
+Upgrade: h2,h2c
+Connection: Upgrade
+Location: https://networkwalks.com/
+Referrer-Policy: no-referrer-when-downgrade
+X-Endurance-Cache-Level: 0
+X-nginx-cache: WordPress
+Content-Type: text/html; charset=UTF-8
+
+Task 5
+
+wafw00f networkwalks.com
+
+                   ______
+                  /      \
+                 (  Woof! )
+                  \  ____/                      )
+                  ,,                           ) (_
+             .-. -    _______                 ( |__|
+            ()``; |==|_______)                .)|__|
+            / ('        /|\                  (  |__|
+        (  /  )        / | \                  . |__|
+         \(_)_))      /  |  \                   |__|
+
+                    ~ WAFW00F : v2.4.2 ~
+    The Web Application Firewall Fingerprinting Toolkit
+    
+[*] Checking https://networkwalks.com
+[+] The site https://networkwalks.com is behind ModSecurity (SpiderLabs) WAF.
+[~] Number of requests: 2
+
+Task 6
+
+dnsrecon -d networkwalks.com
+2026-09-18T12:24:34.133849-0400 INFO Starting enumeration for domain: networkwalks.com
+2026-09-18T12:24:34.134410-0400 INFO std: Performing General Enumeration against: networkwalks.com...
+2026-09-18T12:24:35.051878-0400 ERROR No answer for DNSSEC query for networkwalks.com
+2026-09-18T12:24:35.549512-0400 INFO     SOA ns6135.hostgator.com 50.87.144.87
+2026-09-18T12:24:35.712989-0400 INFO     NS ns6136.hostgator.com 192.232.216.131
+2026-09-18T12:24:36.499613-0400 INFO     Bind Version for 192.232.216.131 "9.16.23-RH"
+2026-09-18T12:24:36.499935-0400 INFO     NS ns6135.hostgator.com 50.87.144.87
+2026-09-18T12:24:37.251317-0400 INFO     Bind Version for 50.87.144.87 "9.16.23-RH"
+2026-09-18T12:24:38.337219-0400 INFO     MX mail.networkwalks.com 192.232.216.135
+2026-09-18T12:24:38.842123-0400 INFO     A networkwalks.com 192.232.216.135
+2026-09-18T12:24:40.071793-0400 INFO     TXT networkwalks.com v=spf1 +a +mx +ip4:50.87.144.87 +include:websitewelcome.com ~all
+2026-09-18T12:24:40.072249-0400 INFO     TXT networkwalks.com google-site-verification=rr04eRmqHoWY3XemnizDNVK4q75X-Ij-mjgEeg-UsYI
+2026-09-18T12:24:41.197856-0400 INFO Enumerating SRV Records
+2026-09-18T12:24:45.908401-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.204.15 443
+2026-09-18T12:24:45.908630-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.203.15 443
+2026-09-18T12:24:45.908710-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.204.14 443
+2026-09-18T12:24:45.908780-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.204.11 443
+2026-09-18T12:24:45.908835-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.203.9 443
+2026-09-18T12:24:45.908889-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.203.14 443
+2026-09-18T12:24:45.908940-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.203.11 443
+2026-09-18T12:24:45.908994-0400 INFO     SRV _autodiscover._tcp.networkwalks.com cpanelemaildiscovery.cpanel.net 184.94.204.9 443
+2026-09-18T12:24:45.910689-0400 INFO 8 Records Found
+2026-09-18T12:24:45.911095-0400 INFO Completed enumeration for domain: networkwalks.com
+
+
+
+
+
